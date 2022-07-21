@@ -41,11 +41,11 @@ function setup() {
   console.log(speechRec);
   if(speechRec.resultValue==true){
     switch (speechRec.resultString) {
-      case "hello.": intro()
+      case "hello": intro()
 
         break;
       
-      case "hi.":intro();
+      case "hi":intro();
         break; 
       case "what's up?":voice.speak("i am fine what's about you ");
         break   ;
