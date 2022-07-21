@@ -47,9 +47,9 @@ function setup() {
       
       case "hi":intro();
         break; 
-      case "what's up?":voice.speak("i am fine what's about you ");
+      case "whats up":voice.speak("i am fine what's about you ");
         break   ;
-      case "how are you?":voice.speak("i am fine what's about you ");
+      case "how are you":voice.speak("i am fine what's about you ");
         break   ;
     
       default:  sry();
