@@ -45,18 +45,20 @@ function setup() {
 
         break;
       
-      case "hi":intro();
+      case "hai":intro();
         break; 
-      case "whats up":voice.speak("i am fine what's about you ");
+      case "WhatsApp":voice.speak("i am fine what's about you ");
         break   ;
       case "how are you":voice.speak("i am fine what's about you ");
         break   ;
-    
+        case "you are awesome":voice.speak("thank u but, not more than u ");
+        break   ;
       default:  sry();
         break;
     }
     text(speechRec.resultString,100,100);
-    console.log(speechRec.resultString)
+    console.log(speechRec.resultString);
+    createP(speechRec.resultString)
   }
  }
 }
