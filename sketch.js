@@ -2,7 +2,7 @@ var inp, speechRec;
 var line = 10;
 voice = new p5.Speech();
 voice.setPitch(2);
-//voice.setRate(0.2);
+voice.setRate(0.5);
 
 function preload(){
   img1=loadImage("1.png");
@@ -45,13 +45,35 @@ function setup() {
 
         break;
       
-      case "hai":intro();
+      case "hi":intro();
         break; 
       case "WhatsApp":voice.speak("i am fine what's about you ");
         break   ;
       case "how are you":voice.speak("i am fine what's about you ");
         break   ;
         case "you are awesome":voice.speak("thank u but, not more than u ");
+        break   ;
+        case "Akshat":voice.speak("a genius and my daddy ");
+        break   ;
+        case "Tanya":voice.speak(" padhai karle beta ");
+        break   ;
+        case "Soumya":voice.speak("white hat junior ");
+        break   ;
+        case "what should I call you":voice.speak("you can call me tonight ");
+        break   ;
+        case "Anushka":voice.speak("bhaalu aagya bhaagoo ");
+        break   ;
+        case "Anwesha":voice.speak("didi ji ");
+        break   ;
+        case "Aditya Soni":voice.speak("lawra");
+        break   ;
+        case "Aditya Nema":voice.speak("bharva ");
+        break   ;
+        case "Vedant":voice.speak("jija ji ");
+        break   ;
+        case "I love you":voice.speak("Congratulations aapka cut chuka hai. HaHaHaha ");
+        break   ;
+        case "f*** you":voice.speak("okay, when? ");
         break   ;
       default:  sry();
         break;
@@ -83,7 +105,7 @@ function run(){
 }
 
 function intro(){
-  voice.speak("hello i m apple");
+  voice.speak("hello i m angel priya. one of the program designed by akshat");
 }
 function sry(){
   voice.speak("Sorry! i didnt get that");
